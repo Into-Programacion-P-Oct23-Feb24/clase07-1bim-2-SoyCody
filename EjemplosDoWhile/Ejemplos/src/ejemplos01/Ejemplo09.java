@@ -51,7 +51,8 @@ public class Ejemplo09 {
         } while (bandera); // (bandera==true)
 
         // promedio = suma / contador_calificaciones;
-        promedio = (double) suma / contador_calificaciones;
+        promedio = (double) suma / contador_calificaciones; // "(double)" nos ayuda a convertir un valor entero a decimal ya que en este caso tenemos dos enteros,
+                                                            // pero para que haga la operacion debe ser minimo un termino sea decimal
         cadenaFinal = String.format("%s\nPromedio de calificaciones: %.2f",
                 cadenaFinal,
                 promedio);
