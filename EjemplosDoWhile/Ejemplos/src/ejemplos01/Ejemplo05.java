@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//  multiplica el resultado por 4 el cual va cambiando de valor las 4 veces las cuales esta en la condicion
 package ejemplos01;
 
 /**
