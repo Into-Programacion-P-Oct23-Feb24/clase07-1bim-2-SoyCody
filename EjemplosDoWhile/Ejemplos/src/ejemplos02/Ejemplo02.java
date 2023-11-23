@@ -40,6 +40,7 @@ public class Ejemplo02 {
                 case "yes":
                 case "y":    
                     bandera = false;
+                    break;
             }
             
 
