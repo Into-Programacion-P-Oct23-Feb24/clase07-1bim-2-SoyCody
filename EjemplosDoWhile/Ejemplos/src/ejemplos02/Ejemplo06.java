@@ -32,6 +32,10 @@ public class Ejemplo06 {
         int operacion;
         int contador = 1;
         int limite;
+        System.out.println("Ingresar el valor de la tabla");
+        tabla = entrada.nextInt();
+        System.out.println("Ingresar el valor del limite");
+        limite = entrada.nextInt();
         
         do {
             operacion = tabla * contador;
