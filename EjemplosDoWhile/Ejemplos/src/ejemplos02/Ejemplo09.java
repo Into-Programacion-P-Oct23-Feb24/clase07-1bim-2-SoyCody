@@ -31,6 +31,7 @@ public class Ejemplo09 {
         boolean bandera = true;
         int suma = 0;
         int contador_calificaciones = 0;
+        cadenaFinal = "Listado de Notas\n";
         
         
         do {
@@ -39,14 +40,14 @@ public class Ejemplo09 {
             contador_calificaciones = contador_calificaciones + 1;
             
             System.out.println("Ingrese su nombre");
-            nombre = entrada.nextLine();
+            nombre = entrada.nextLine().toLowerCase();
             System.out.println("Ingrese la nota");
             nota = entrada.nextInt();
             suma = suma + nota;
             System.out.println("Ingrese (-111) si desea salir del ciclo; "
                     + "cualquier otro número para continuar");
             salida = entrada.nextInt();
-
+            cadenaFinal = String.format("%s\nCalificacion %s del estudiante %s", cadenaFinal, nota, nombre );
             if (salida == -111) {
                 bandera = false;
             }
@@ -59,8 +60,8 @@ public class Ejemplo09 {
         
         // promedio = suma / contador_calificaciones;
         promedio = (double)suma / contador_calificaciones;
-        cadenaFinal = String.format("%s\nCalificacion %.2f del estudiante %s", nota,
-                promedio, nombre);
+        cadenaFinal = String.format("\n%s\n", cadenaFinal);
         System.out.printf("%s\n", cadenaFinal);
+        System.out.printf("Promedio de calificaciones: %s", promedio);
     }
 }
